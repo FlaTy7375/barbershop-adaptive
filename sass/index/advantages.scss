@@ -1,0 +1,210 @@
+//вьюпорты
+@import "../variables.scss";
+
+.advantages {
+    position: relative;
+    padding: 0 20px;
+    padding-top: 40px;
+    padding-bottom: 46px;
+    background-color: #353535;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 95px;
+        padding-top: 42px;
+        padding-bottom: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 0 120px;
+        padding-top: 77px;
+        padding-bottom: 106px;
+    }
+}
+
+.advantages::after {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 68px;
+    background-image: url("../images/advantage-decor.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.advantages__title {
+    margin: 0;
+    margin-top: 31px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        text-align: left;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+.advantages__description {
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 12px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    br {
+        display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+        text-align: left;
+        margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        text-align: center;
+    }
+
+}
+
+.advantages__description br {
+    @media (min-width: $desktop-width) {
+        display: inline;
+    }
+}
+
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+
+    @media (min-width: $tablet-width) {
+        max-width: 880px;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 960px;
+    }
+}
+
+.advantages__toggles {
+    text-align: center;
+    margin: 0;
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.advantages__item--cool,
+.advantages__item--expensive {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+}
+
+.advantages__icon {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        margin-right: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0 auto;
+    }
+}
+
+.slider__toggle {
+    margin-right: 23px;
+    padding: 0;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    rotate: 45deg;
+}
+
+.slider__toggle--current {
+    background-color: #FFFFFF;
+}
+
+.slider__toggle:nth-child(3) {
+    margin-right: 0;
+}
+
+.slider__toggle span {
+    display: none;
+}
+
+.advantages__item {
+    @media (min-width: $tablet-width) {
+        position: relative;
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    &:last-child {
+        margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        min-height: 274px;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}
+
+.advantages__item:not(:last-child)::before {
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        top: 134px;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #FFFFFF;
+        opacity: 0.1;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.advantages__item--wrapper {
+    display: flex;
+    flex-direction: column;
+}

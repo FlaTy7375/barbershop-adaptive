@@ -1,0 +1,204 @@
+//вьюпорты
+@import "../variables.scss";
+
+.sign-up__form {
+    padding-bottom: 39px;
+}
+
+.sign-up {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-top: 35px;
+}
+
+.sign-up__group {
+    margin: 0;
+}
+
+.sign-up__group .input__info {
+    resize: none;
+    min-height: 112px;
+    margin: 0;
+}
+
+.sign-up__input {
+    display: block;
+    margin: 0;
+    margin-bottom: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-top: 9px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #e5ddd5;
+}
+
+.input__middle-name {
+    margin-bottom: 32px;
+}
+
+.input__email {
+    margin-bottom: 32px;
+}
+
+.sign-up__title {
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sign-up__input::-webkit-input-placeholder {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.button__wrapper {
+    padding: 0 20px;
+}
+
+.sign-up__button {
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin-top: 53px;
+    background-color: #826550;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+@media (min-width: $tablet-width) {
+    .sign-up__form {
+        padding-bottom: 76px;
+    }
+
+    .sign-up__input::-webkit-input-placeholder {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .sign-up {
+        flex-direction: row;
+        width: 640px;
+        padding: 0 64px;
+        padding-top: 52px;
+        margin: 0 auto;
+    }
+
+    .sign-up__input {
+        margin-bottom: 35px;
+        min-width: 213px;
+        height: 70px;
+    }
+
+    .input__middle-name {
+        width: 214px;
+    }
+
+    .input__name {
+        border-left: none;
+        border-right: none;
+    }
+
+    .input__phone {
+        width: 640px;
+    }
+
+    .input__email {
+        width: 640px;
+    }
+
+    .input__info {
+        width: 640px;
+        height: 211px;
+        margin-bottom: 0;
+    }
+
+    .sign-up__title {
+        margin: 0;
+        margin-bottom: 67px;
+        text-align: left;
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .home-button {
+        height: 50px;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 13px;
+        width: 160px;
+        margin-left: auto;
+    }
+}
+
+.home-button {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: inline;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .sign-up__form {
+        padding-bottom: 87px;
+    }
+
+    .sign-up {
+        width: 960px;
+    }
+
+    .sign-up__title {
+        margin-right: 400px;
+        margin-bottom: 66px;
+    }
+
+    .sign-up__input {
+        width: 960px;
+    }
+
+    .input__fam {
+        margin-right: 37px;
+    }
+
+    .input__name {
+        margin-right: 38px;
+    }
+
+    .input__fam,
+    .input__name,
+    .input__middle-name {
+        width: 295px;
+    }
+
+    .input__phone {
+        width: 462px;
+        margin-right: 35px;
+    }
+
+    .input__email {
+        width: 463px;
+    }
+}
+

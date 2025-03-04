@@ -1,0 +1,78 @@
+// хэдер
+@import "header.scss";
+
+// главная страница
+// статистика
+@import "index/stats.scss";
+
+// преимущества
+@import "index/advantages.scss";
+
+// новости
+@import "index/news.scss";
+
+// отзывы
+@import "index/reviews.scss";
+
+// форма
+// запись
+@import "form/sign-up.scss";
+
+// модель бороды
+@import "form/beard-model.scss";
+
+// доп. услуги
+@import "form/services.scss";
+
+// галерея(работы)
+// работы
+@import "works/works.scss";
+
+// ассортимент
+@import "works/assortment.scss";
+
+// футер
+@import "footer.scss";
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #E5DDD5;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.page__body {
+    margin: 0;
+}
+
+.index-main {
+    background-color: #323232;
+    color: #ffffff;
+}
+
+.sign-up-main {
+    background-color: #ffffff;
+}
+
+.works {
+    background-color: #ffffff;
+}
+

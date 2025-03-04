@@ -1,0 +1,125 @@
+//вьюпорты
+@import "../variables.scss";
+
+.services {
+    padding: 0 20px;
+    padding-top: 43px;
+}
+
+.services__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 35px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.services__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.services__option {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+    .services {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 0 64px;
+        padding-top: 55px;
+    }
+
+    .services__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services__item:nth-child(5) {
+        margin-bottom: 0;
+    }
+
+    .services__title {
+        position: relative;
+        font-size: 30px;
+        line-height: 39px;
+        margin-bottom: 64px;
+    }
+
+    .services__title::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 19px;
+        height: 1px;
+        width: 139px;
+        background-color: #E5DDD5;
+    }
+
+    .services__title::before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 19px;
+        height: 1px;
+        width: 139px;
+        background-color: #E5DDD5;
+    }
+
+    .services__option {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .sign-up__button {
+        margin: 0 auto;
+        margin-top: 61px;
+        font-size: 24px;
+        line-height: 31px;
+        width: 640px;
+        height: 70px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .services {
+        max-width: 960px;
+        padding-top: 62px;
+    }
+
+    .services__list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sign-up__button {
+        width: 960px;
+        margin-top: 82px;
+    }
+
+    .services__title {
+        margin-bottom: 73px;
+    }
+
+    .services__item:nth-child(4) {
+        margin-bottom: 0;
+    }
+}

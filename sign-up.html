@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <title>Barbershop sign up</title>
+</head>
+
+<body class="page__body">
+    <header class="page-header">
+        <a class="header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="images/logotype-tablet.svg">
+                <img class="header__logo-image" src="images/logotype-mobile.svg" alt="Логотип Барбершопа" width="226"
+                height="30">
+            </picture>
+        </a>
+        <!-- Регулируется классами header-nav--closed и header-nav--opened и header-nav--nojs -->
+        <nav class="header-nav header-nav--closed header-nav--nojs">
+            <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="header-nav__wrapper">
+            <ul class="header-nav__list site-list">
+                <li class="site__item"><a class="site__item-link" href="index.html">Главная</a></li>
+                <li class="site__item"><a class="site__item-link" href="works.html">Наши работы</a></li>
+                <li class="site__item site__item--active"><a class="site__item-link" href="sign-up.html">Записаться</a></li>
+                <li class="site__item"><a class="site__item-link" href="#">Контакты</a></li>
+                <li class="site__item"><a class="site__item-link" href="#">HtmlAcademy</a></li>
+            </ul>
+            <div class="header-nav__list user-list">
+                <a class="user-list__login" href="login.html"><svg class="user-list__login-icon" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3">
+                            <path d="M7 2H14V14H7V16H16V0H7V2Z" fill="white" />
+                            <path d="M7 9H0V7H7V4L11 8L7 12V9Z" fill="white" />
+                        </g>
+                    </svg>
+                    <span>Войти</span></a>
+            </div>
+        </div>
+        </nav>
+    </nav>
+    </header>
+    <main class="sign-up-main">
+        <form class="sign-up__form" action="https://echo.htmlacademy.ru/" method="post">
+            <section class="sign-up">
+                <h2 class="sign-up__title">Запись на стрижку</h2>
+                <a class="home-button button" href="#">На главную</a>
+
+                <p class="sign-up__group">
+                    <input class="sign-up__input input__fam" type="text" name="sign-up__fam" id="sign-up__fam"
+                        placeholder="Фамилия">
+                    <label for="sign-up__fam">
+                        <span class="visually-hidden">Введите фамилию</span>
+                    </label>
+                </p>
+                <p class="sign-up__group">
+                    <input class="sign-up__input input__name" type="text" name="sign-up__name" id="sign-up__name"
+                        placeholder="Имя">
+                    <label for="sign-up__name">
+                        <span class="visually-hidden">Введите имя</span>
+                    </label>
+                </p>
+                <p class="sign-up__group">
+                    <input class="sign-up__input input__middle-name" type="text" name="sign-up__middle-name"
+                        id="sign-up__middle-name" placeholder="Отчество">
+                    <label for="sign-up__middle-name">
+                        <span class="visually-hidden">Введите отчество</span>
+                    </label>
+                </p>
+                <p class="sign-up__group">
+                    <input class="sign-up__input input__phone" type="text" name="sign-up__phone" id="sign-up__phone"
+                        placeholder="Контактный телефон">
+                    <label for="sign-up__phone">
+                        <span class="visually-hidden">Введите контактный телефон</span>
+                    </label>
+                </p>
+                <p class="sign-up__group">
+                    <input class="sign-up__input input__email" type="email" name="sign-up__email" id="sign-up__email"
+                        placeholder="Контактный e-mail">
+                    <label for="sign-up__email">
+                        <span class="visually-hidden">Введите контактный e-mail</span>
+                    </label>
+                </p>
+                <p class="sign-up__group">
+                    <textarea class="sign-up__input input__info" name="sign-up__info" id="sign-up__info"
+                        placeholder="Доп. информация для мастера"></textarea>
+                    <label for="sign-up__info">
+                        <span class="visually-hidden">Введите доп. информацию для мастера</span>
+                    </label>
+                </p>
+            </section>
+            <section class="beard-model">
+                <h2 class="beard-model__title">Выберите модель бороды</h2>
+                <ul class="beard-model__list">
+                    <li class="beard-model__item">
+                        <label class="beard-model__label">
+                        <input class="visually-hidden beard-model__input" type="radio" name="beard-model__admiral" checked>
+                        <span class="beard-model__radio"></span>
+                        <span class="beard-model__option">адмирал</span>
+                        <svg width="52" height="49" viewBox="0 0 52 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M51.4339 0H51.1913C48.8561 7.6154 48.2294 16.9044 41.7294 20.4398C40.5264 17.1223 37.5747 15.5972 34.2084 14.1415C32.0653 13.2205 29.6089 11.6063 27.5365 11.5271C27.0086 11.4493 26.4698 11.5619 26.0202 11.844C25.5706 11.5619 25.0318 11.4493 24.5039 11.5271C22.4821 11.6063 19.965 13.2205 17.832 14.1415C14.4658 15.5972 11.514 17.1124 10.311 20.4398C3.80093 16.9044 3.18429 7.6154 0.849145 0H0.606532C0.333159 0.773154 0.13019 1.5685 0 2.37672C0 4.27809 0.545879 23.6285 1.9409 30.5408C3.1944 36.7698 8.08709 41.2658 12.8585 44.207C16.1843 46.2569 21.4611 49 26 49C30.5389 49 35.8359 46.2569 39.1415 44.207C43.9129 41.2361 48.8056 36.7698 50.0591 30.5408C51.4541 23.6087 52 4.27809 52 2.37672C51.883 1.56972 51.6936 0.774397 51.4339 0V0ZM37.4028 27.7878C37.1501 29.3228 35.7247 31.135 34.0062 31.234C30.9736 31.3925 29.4471 26.8569 26.0607 26.8965C22.6742 26.9361 21.1275 31.3925 18.1151 31.234C16.3966 31.135 14.9611 29.3228 14.7185 27.7878C14.6055 26.7929 14.6976 25.7858 14.9893 24.8264C15.281 23.867 15.7664 22.9747 16.4168 22.2025C17.5288 21.1429 19.2675 21.2815 21.1477 21.0141C22.9493 20.8813 24.665 20.2069 26.0607 19.0831C27.4563 20.2069 29.172 20.8813 30.9736 21.0141C32.8538 21.2815 34.5925 21.1429 35.7045 22.2025C36.3549 22.9747 36.8403 23.867 37.132 24.8264C37.4237 25.7858 37.5158 26.7929 37.4028 27.7878Z" fill="#826550"/>
+                        </svg>
+                        </label>
+                    </li>
+                    <li class="beard-model__item">
+                        <label class="beard-model__label">
+                        <input class="visually-hidden beard-model__input" type="radio" name="beard-model__lesorub">
+                            <span class="beard-model__radio"></span>
+                            <span class="beard-model__option">лесоруб</span>
+                            <svg width="58" height="68" viewBox="0 0 58 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M51.8855 21.993C52.0062 20.3089 52.3581 18.5157 52.6095 16.6434C53.2932 11.264 54.2183 5.08217 52.4888 0H52.2877C50.9202 3.70513 50.9805 8.27214 50.0756 12.2448C49.5389 14.94 48.4286 17.4926 46.8177 19.7343C46.2848 20.4178 45.7519 21.2698 44.8871 21.5175C44.2436 17.634 40.5835 16.6235 37.205 15.2168C35.0633 14.3351 33.1829 13.2354 31.0513 13.0769C30.3754 13.0936 29.7023 13.1699 29.0402 13.3048C28.3781 13.1699 27.7051 13.0936 27.0292 13.0769C24.8673 13.2255 23.0071 14.3351 20.8754 15.2168C17.4668 16.6235 13.8368 17.634 13.1531 21.5175C12.2884 21.2698 11.7554 20.4178 11.2225 19.7343C9.61981 17.4881 8.51023 14.9373 7.96464 12.2448C7.03957 8.27214 7.08984 3.70513 5.75251 0H5.51118C3.7817 5.08217 4.68666 11.264 5.39052 16.6434C5.6419 18.5157 5.99383 20.3089 6.11449 21.993C6.90885 32.94 -0.873832 44.8974 0.0814068 50.6434C1.01654 58.1031 8.52773 59.9557 14.3195 62.8881C18.6935 65.1072 22.6753 67.8415 27.7129 68H30.2871C35.3146 67.792 39.3367 65.0973 43.6805 62.8881C49.4723 59.9161 56.9835 58.1031 57.9186 50.6434C58.8738 44.8974 51.0912 32.94 51.8855 21.993ZM29 25.7576C26.5892 25.8223 24.1777 25.6531 21.8005 25.2523C22.4642 23.2214 25.8226 23.7069 28.9196 23.7069H29.0804C32.097 23.7069 35.5358 23.2214 36.1995 25.2523C33.8223 25.6534 31.4108 25.8226 29 25.7576Z" fill="#826550"/>
+                            </svg>
+                        </label>
+                    </li>
+                    <li class="beard-model__item">
+                        <label class="beard-model__label">
+                        <input class="visually-hidden beard-model__input" type="radio" name="beard-model__poliarnik">
+                            <span class="beard-model__radio"></span>
+                            <span class="beard-model__option">полярник</span>
+                            <svg width="63" height="78" viewBox="0 0 63 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M63 41.7378C63 36.5603 60.6072 34.0163 59.3654 31.8002C56.9946 26.2361 55.5623 20.3284 55.125 14.3101C55.0543 9.43076 53.4187 1.98751 52.2173 0C51.3389 0 50.6827 7.73143 49.9154 11.5673C48.4716 18.5236 46.1091 20.4416 45.4327 20.5111C44.6654 17.7187 41.2832 13.1971 31.6212 12.8294H31.5H31.3687C21.7168 13.1872 18.3245 17.7187 17.5673 20.5111C16.8808 20.4416 14.5385 18.5236 13.0846 11.5673C12.3173 7.73143 11.651 0 10.7827 0C9.58125 1.98751 7.94567 9.43076 7.875 14.3101C7.42776 20.3269 5.99585 26.233 3.63461 31.8002C2.39279 34.0163 0 36.5603 0 41.7378C0 45.4545 5.25 48.8929 5.69423 53.0666C5.81538 54.279 5.69423 55.402 5.81538 56.4057C7.83461 73.7765 23.8572 78 31.5 78C39.1428 78 55.1654 73.7765 57.1846 56.4057C57.3361 55.4119 57.1846 54.279 57.3058 53.0666C57.75 48.8929 63 45.4644 63 41.7378ZM33.5596 26.5929C32.1897 26.4638 30.8103 26.4638 29.4404 26.5929C27.6937 26.9308 23.625 27.5867 23.625 25.5197C23.625 24.4564 30.4096 23.244 31.5 23.244C32.5904 23.244 39.375 24.4564 39.375 25.5197C39.375 27.5768 35.3365 26.9308 33.5596 26.5929Z" fill="#826550"/>
+                            </svg>
+                        </label>
+                    </li>
+                    <li class="beard-model__item">
+                        <label class="beard-model__label">
+                        <input class="visually-hidden beard-model__input" type="radio" name="beard-model__boiarin">
+                            <span class="beard-model__radio"></span>
+                            <span class="beard-model__option">боярин</span>
+                            <svg width="57" height="97" viewBox="0 0 57 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M51.12 15.1339C50.73 9.72185 50.51 4.35944 48.6 0C47.84 0 47.07 7.25911 46.32 10.844C44.84 17.9343 42.61 19.0663 41.88 19.0663C41 15.2332 37.5 14.8956 34.08 13.2273C32.9573 12.6289 31.7397 12.2258 30.48 12.0356C29.8113 12.0254 29.1427 12.0653 28.48 12.1548C27.8173 12.0653 27.1487 12.0254 26.48 12.0356C25.2203 12.2258 24.0027 12.6289 22.88 13.2273C19.46 14.8559 15.94 15.2134 15.08 19.0663C14.35 19.0663 12.08 17.9343 10.64 10.844C9.93 7.25911 9.16 0 8.4 0C6.49 4.35944 6.27 9.72185 5.88 15.1339C5 38.51 0 51.1713 0 61.9656C0 87.8541 11.71 97 28.5 97C45.29 97 57 87.8541 57 61.9656C57 51.1713 52 38.51 51.12 15.1339ZM34.44 24.826C31.65 25.9878 29.09 24.1209 28.56 24.111H28.44C27.91 24.111 25.35 25.9878 22.56 24.826C21.78 21.2709 24.96 20.8538 28.5 20.9432C32.05 20.7744 35.23 21.2312 34.44 24.826Z" fill="#826550"/>
+                            </svg>
+                        </label>
+                    </li>
+                    <li class="beard-model__item">
+                        <label class="beard-model__label">
+                        <input class="visually-hidden beard-model__input" type="radio" name="beard-model__mudrec">
+                            <span class="beard-model__radio"></span>
+                            <span class="beard-model__option">мудрец</span>
+                            <svg width="45" height="104" viewBox="0 0 45 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43.7077 0H43.5868C40.746 21.3697 38.1672 22.392 36.5352 22.5111C34.9033 22.6302 32.8684 20.7543 31.5789 20.0099C28.8637 18.2832 25.6826 17.4045 22.4521 17.4888C19.2216 17.4045 16.0406 18.2832 13.3253 20.0099C12.0359 20.7543 9.79951 22.6203 8.36904 22.5111C6.81768 22.392 4.22873 21.3697 1.39801 0H1.27713C-0.808136 12.1191 -0.294375 49.8262 2.48598 63.1265C5.11522 81.5086 12.6705 97.9651 16.0251 102.432C16.7101 103.424 19.5811 103.99 22.4924 104C25.4037 104.01 28.2747 103.464 28.9598 102.432C32.3143 97.9651 39.8696 81.5086 42.4989 63.1265C45.3296 49.8262 45.793 12.1191 43.7077 0ZM22.4924 27.9404C19.0806 27.9437 15.6712 28.1193 12.2776 28.4665C13.416 26.7295 21.344 25.2506 22.4924 25.0422C23.6509 25.2506 31.5588 26.7295 32.7072 28.4665C29.3136 28.1196 25.9042 27.944 22.4924 27.9404Z" fill="#826550"/>
+                            </svg>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="services">
+                <h2 class="services__title">Дополнительные услуги:</h2>
+                <ul class="services__list">
+                    <li class="services__item">
+                        <input class="services__chekbox" type="checkbox" name="services__choice" id="services__option0"
+                            checked>
+                        <label for="services__option0">
+                            <span class="services__option">Подкрасить бороду</span>
+                        </label>
+                    </li>
+                    <li class="services__item">
+                        <input class="services__chekbox" type="checkbox" name="services__choice" id="services__option1"
+                            checked>
+                        <label for="services__option1">
+                            <span class="services__option">Накрутить усы</span>
+                        </label>
+                    </li>
+                    <li class="services__item">
+                        <input class="services__chekbox" type="checkbox" name="services__choice" id="services__option2">
+                        <label for="services__option2">
+                            <span class="services__option">Причесать бороду</span>
+                        </label>
+                    </li>
+                    <li class="services__item">
+                        <input class="services__chekbox" type="checkbox" name="services__choice" id="services__option3">
+                        <label for="services__option3">
+                            <span class="services__option">Подровнять виски</span>
+                        </label>
+                    </li>
+                    <li class="services__item">
+                        <input class="services__chekbox" type="checkbox" name="services__choice" id="services__option4">
+                        <label for="services__option4">
+                            <span class="services__option">Убрать седину</span>
+                        </label>
+                    </li>
+                    <li class="services__item">
+                        <input class="services__chekbox" type="checkbox" name="services__choice" id="services__option5">
+                        <label for="services__option5">
+                            <span class="services__option">Отполировать лысину</span>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <div class="button__wrapper">
+                <button class="sign-up__button" type="submit">Отправить заявку</button>
+            </div>
+        </form>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__contacts">
+                <b class="contacts__title">Барбершоп Бородинский</b>
+                <p class="contacts__text">
+                    г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+                    <a class="contacts__phone" href="tel:+78125556666">
+                        <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+                    </a>
+            </div>
+            <div class="page-footer__social">
+                <b class="social__title">Давайте дружить!</b>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                            <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.7334 15.1476C14.5777 14.1554 15 13.0283 15 11.7661C15 9.65731 13.291 8.18402 10.8981 7.65262C11.9277 7.39511 12.7018 7.11184 13.2212 6.42675C13.7403 5.74166 13.9999 4.97504 13.9999 4.1282C13.9999 2.9656 13.5529 2.26258 12.659 1.35754C11.7649 0.452494 10.3427 0 8.39224 0H0V17H8.80485C11.5682 17.0001 12.889 16.1398 13.7334 15.1476ZM4.66665 3.36207H6.76663C8.03079 3.36207 8.6631 3.79467 8.6631 4.74113C8.6631 5.08981 8.52764 5.74569 8.25684 6.05278C7.98581 6.35999 7.5205 6.51356 6.86149 6.51356H4.66671V3.36207H4.66665ZM4.64214 13.214V10.1253H7.21591C8.04659 10.1253 8.61795 10.2894 8.92946 10.6172C9.2408 10.9453 9.39691 11.3042 9.39691 11.6945C9.39691 12.085 9.23642 12.4354 8.91603 12.7469C8.59523 13.0586 8.09163 13.214 7.40551 13.214H4.64214Z"
+                                    fill="white" />
+                            </svg>
+                            </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><svg
+                                width="10" height="21" viewBox="0 0 10 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.58822 21V11.8484H0V7.73147H2.6474V4.3246C2.6474 4.3246 2.76819 0.0333456 6.16387 0H9.94317V4.04007H7.59887C7.59887 4.04007 6.60905 4.04007 6.60905 5.24749C6.60905 6.45232 6.60905 7.80329 6.60905 7.80329H10L9.59271 11.9177H6.66823V21H2.58822Z"
+                                    fill="white" />
+                            </svg>
+                            </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram"
+                            href="https://www.instagram.com/htmlacademy"><svg width="19" height="19" viewBox="0 0 19 19"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 0H0V19H19V0ZM9.5 6.01667C11.4241 6.01667 12.9833 7.57657 12.9833 9.5C12.9833 11.4228 11.4241 12.9833 9.5 12.9833C7.57657 12.9833 6.01667 11.4228 6.01667 9.5C6.01667 7.57657 7.57657 6.01667 9.5 6.01667ZM16.4667 16.4667H2.53333V7.91667H4.02737C3.88233 8.41953 3.8 8.95027 3.8 9.5C3.8 12.6477 6.35297 15.2 9.5 15.2C12.6489 15.2 15.2 12.6477 15.2 9.5C15.2 8.95027 15.1177 8.41953 14.9726 7.91667H16.4667V16.4667ZM16.4667 3.17173V5.08187V5.7C16.4667 5.7 16.1836 5.69303 15.8435 5.69873V5.7H13.9333C13.5882 5.7 13.3 5.7 13.3 5.7V2.53333H15.8333L15.8435 2.53523C15.8435 2.53523 16.4667 2.5384 16.4667 2.53333C16.4667 2.53333 16.4654 3.16983 16.4654 3.17173H16.4667Z"
+                                    fill="white" />
+                            </svg>
+                            </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright">
+                <b class="copyright__text">Разработано:</b>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var navMain = document.querySelector('.header-nav');
+        var navToggle = document.querySelector('.header-nav__toggle');
+
+        navMain.classList.remove('header-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('header-nav--closed')) {
+            navMain.classList.remove('header-nav--closed');
+            navMain.classList.add('header-nav--opened');
+          } else {
+            navMain.classList.add('header-nav--closed');
+            navMain.classList.remove('header-nav--opened');
+          }
+        });
+      </script>
+</body>
+
+</html>

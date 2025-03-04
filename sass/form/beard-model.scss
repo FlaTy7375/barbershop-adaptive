@@ -1,0 +1,149 @@
+//вьюпорты
+@import "../variables.scss";
+
+.beard-model {
+    padding: 0 40px;
+    padding-top: 37px;
+    max-width: 447px;
+    margin: 0 auto;
+}
+
+.beard-model__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 36px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.beard-model__option {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.beard-model__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(63px, 1fr));
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.beard-model__item {
+    width: 63px;
+    display: flex;
+    justify-content: center;
+}
+
+.beard-model__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 67px;
+}
+
+.beard-model__option {
+    margin-bottom: 18px;
+}
+
+.beard-model__radio {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #E5DDD5;
+    border-radius: 50%;
+}
+
+.beard-model__input[type=radio]:checked + .beard-model__radio::before {
+    position: absolute;
+    box-sizing: border-box;
+    content: "";
+    top: 17px;
+    left: 17px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #826550;
+}
+
+@media (min-width: $tablet-width) {
+    .beard-model {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 0 64px;
+        padding-top: 53px;
+    }
+
+    .beard-model__list {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 640px;
+        padding: 0 12px;
+    }
+
+    .beard-model__option {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .beard-model__title {
+        position: relative;
+        font-size: 30px;
+        line-height: 39px;
+        margin-bottom: 37px;
+    }
+
+    .beard-model__title::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 19px;
+        height: 1px;
+        width: 139px;
+        background-color: #E5DDD5;
+    }
+
+    .beard-model__title::before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 19px;
+        height: 1px;
+        width: 139px;
+        background-color: #E5DDD5;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .beard-model {
+        max-width: 960px;
+        padding-top: 65px;
+    }
+
+    .beard-model__list {
+        width: 960px;
+    }
+
+    .beard-model__title::after {
+        width: 280px;
+    }
+
+    .beard-model__title::before {
+        width: 280px;
+    }
+}

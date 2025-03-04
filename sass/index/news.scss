@@ -1,0 +1,226 @@
+//вьюпорты
+@import "../variables.scss";
+
+.news {
+    position: relative;
+    background-color: #F8F5F2;
+}
+
+.news__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-top: 34px;
+    padding-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+    .news__title {
+        order: 1;
+        min-width: auto;
+    }
+
+    .news__to-all {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .news__list {
+        display: flex;
+        order: 3;
+    }
+
+    .news__wrapper {
+        flex-direction: row;
+        padding: 0 64px;
+        padding-top: 42px;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .news:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: #E5DDD5;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .news__wrapper {
+        min-width: 960px;
+        padding-top: 54px;
+    }
+}
+
+.news__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 27px;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 47px;
+    }
+}
+
+.news__item {
+    @media (min-width: $tablet-width) {
+        margin-bottom: 35px;
+        width: 320px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 39px;
+    }
+}
+
+.news__item:nth-child(1) {
+    position: relative;
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+
+    }
+}
+
+.news__item:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #E5DDD5;
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.news__item:nth-child(3) {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
+}
+
+.news__item:nth-child(3) .news__date {
+    text-align: center;
+}
+
+.news__title {
+    margin: 0;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        font-size: 40px;
+        margin-top: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 69px;
+        margin-top: 10px;
+    }
+}
+
+.news__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.news__date {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 6px;
+    margin-top: 11px;
+    min-width: 50px;
+    height: 60px;
+    background-image: url("../images/date-back.svg");
+    background-repeat: no-repeat;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.news__date span {
+    position: absolute;
+    left: 10px;
+    top: 26px;
+}
+
+.news__day {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.news__text {
+    margin: 0;
+    margin-left: 20px;
+    text-align: left;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+
+    @media (min-width: $tablet-width) {
+        width: 205px;
+    }
+}
+
+.news__to-all {
+    position: relative;
+    box-sizing: border-box;
+    padding: 13px 0;
+    margin-top: 51px;
+    height: 50px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        margin-left: auto;
+        width: 160px;
+    }
+}
+
+.news__to-all::after {
+    position: absolute;
+    content: "";
+    bottom: -28px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #E5DDD5;
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
